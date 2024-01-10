@@ -1,0 +1,3 @@
+#!/bin/bash
+rclone sync /home/florian/ s3-crypt:fpallas-rclone --fast-list --update --use-server-modtime --links --progress --filter-from .rcloneignore
+

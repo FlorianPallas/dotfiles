@@ -1,2 +1,5 @@
-swayidle -w timeout 300 '~/.config/hypr/scripts/lock.sh' \
-            timeout 600 'systemctl suspend'
+swayidle -w \
+  timeout 300 'swaylock -f' \
+  timeout 360 'hyprctl dispatch dpms off' \
+  resume 'hyprctl dispatch dpms on'          
+  before-sleep 'swaylock -f'

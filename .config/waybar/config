@@ -87,10 +87,10 @@
     "format": "{icon} {}",
     "escape": true,
     "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl next",
-    "on-scroll-up": "playerctl volume 0.05+",
-    "on-scroll-down": "playerctl volume 0.05-",
+    "on-click": "playerctl --player spotify play-pause",
+    "on-click-right": "playerctl --player spotify next",
+    "on-scroll-up": "playerctl --player spotify volume 0.05+",
+    "on-scroll-down": "playerctl --player spotify volume 0.05-",
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
   },
   "hyprland/workspaces": {

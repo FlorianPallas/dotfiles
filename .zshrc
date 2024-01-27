@@ -8,7 +8,6 @@ bindkey "^[[1;5D" backward-word
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
 # pnpm
 export PNPM_HOME="/home/florian/.local/share/pnpm"
 case ":$PATH:" in
@@ -26,3 +25,5 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+# local bin
+export PATH="$PATH:/home/florian/.local/bin"

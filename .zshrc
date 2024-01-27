@@ -27,3 +27,5 @@ setopt appendhistory
 
 # local bin
 export PATH="$PATH:/home/florian/.local/bin"
+
+autoload -Uz compinit && compinit

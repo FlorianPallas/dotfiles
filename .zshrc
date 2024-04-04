@@ -31,4 +31,5 @@ export PATH="$PATH:/home/florian/.local/bin"
 # cargo bin
 export PATH="$PATH:/home/florian/.cargo/bin"
 
-autoload -Uz compinit && compinit
+fpath=(~/.stripe $fpath)
+autoload -Uz compinit && compinit -i
